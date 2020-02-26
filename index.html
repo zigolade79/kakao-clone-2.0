@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+    src="https://kit.fontawesome.com/56962aee27.js"
+    crossorigin="anonymous"
+  ></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Chats | Kakao Clone</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span class="status-bar__clock">08:48</span>
+      </div>
+      <div class="status-bar__column">
+        <i class="fas fa-bell"></i>
+        <i class="fas fa-volume-mute"></i>
+        <i class="fas fa-wifi"></i>
+        <span class="status-bar__battery-level">100%</span>
+        <i class="fas fa-battery-full"></i>
+      </div>
+    </div>
+    <header class="header">
+      <div class="header__header-column">
+        <h1 class="header__title">채팅</h1>
+      </div>
+      <div class="header__header-column">
+        <span class="header__icon">
+          <a href="find.html"><i class="fas fa-search"></i></a>
+        </span>
+        <input type="checkbox" id="header__icon" class="input__newchat">
+        <label for="header__icon" class="header__icon show-newchat"><i class="fas fa-comment-medical"></i></label>
+       
+          <div class="newchat">  
+            <div class="newchat__topcard">        
+             <div class="newchat__header">
+              <a href="index.html" class="header__back-btn">
+                <i class="fas fa-arrow-left"></i>
+              </a>
+              <h1 class="header__title">새로운 채팅</h1>       
+            </div>  
+            <div class="newchat__icons">
+              <div class="icons__column">
+                <i class="far fa-comment"></i>
+                <div class="newchat__icons-comment">일반채팅</div>
+              </div>
+              <div class="icons__column">
+                <i class="fas fa-lock"></i>
+                <div class="newchat__icons-comment">비밀채팅</div>
+              </div>
+              <div class="icons__column">
+                <i class="far fa-comments"></i>
+                <div class="newchat__icons-comment">오픈채팅</div>
+              </div>
+            </div>
+          </div>
+          <a href="index.html">
+            <div class="newchat__fill"></div>
+          </a>
+        </div> 
+        </span>
+        <span class="header__icon">
+          <a href="settings.html"><i class="fas fa-cog"></i></a>
+        </span>
+      </div>
+    </header>
+    <main class="chats">
+      <ul class="chats__list">
+        <li class="chats__chat chat">
+          <a href="chat.html">
+            <div class="chats__chat friend friend--lg">
+              <div class="friend__column">
+                <img src="images/f6.jpg" class="m-avatar friend__avatar" />
+                <div class="friend__content">
+                  <span class="friend__name">
+                    박쥐 뇨속
+                  </span>
+                  <span class="friend__bottom-text">
+                    조커야 잡으러 간다~
+                  </span>
+                </div>
+              </div>
+              <div class="friend__column">
+                <span class="chat__timestamp">
+                  2월 26일
+                </span>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="chats__chat chat">
+          
+            <div class="chats__chat friend friend--lg">
+              <div class="friend__column">
+                <div class="friend__avatar-group2">
+                  <img src="images/avatar.jpg" class="friend__avatar-2-1" />
+                  <img src="images/f7.jpg" class="friend__avatar-2-2" />                  
+                </div>
+                <div class="friend__content">
+                  <span class="friend__name">
+                    Joker,펌킨
+                  </span>
+                  <span class="friend__bottom-text">
+                    자기야 지금 어디?
+                  </span>
+                </div>
+              </div>
+              <div class="friend__column">
+                <span class="chat__timestamp">
+                  2월 26일
+                </span>
+              </div>
+            </div>
+          
+        </li>
+        <li class="chats__chat chat">
+          
+            <div class="chats__chat friend friend--lg">
+              <div class="friend__column">
+                <div class="friend__avatar-group">
+                  <img src="images/f2.jpg" class="friend__avatar-4" />
+                  <img src="images/f3.jpg" class="friend__avatar-4" />
+                  <img src="images/f4.jpg" class="friend__avatar-4" />
+                  <img src="images/f6.jpg" class="friend__avatar-4" />
+                </div>
+                <div class="friend__content">
+                  <span class="friend__name">
+                    피터 파커,클라크 켄트,토르,박쥐 뇨속
+                  </span>
+                  <span class="friend__bottom-text">
+                    Assemble!!!!
+                  </span>
+                </div>
+              </div>
+              <div class="friend__column">
+                <span class="chat__timestamp">
+                  2월 20일
+                </span>
+              </div>
+            </div>
+          
+        </li>
+      </ul>
+    </main>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__list-item">
+          <a href="friends.html" class="nav__list-link">
+            <i class="far fa-user"></i
+          ></a>
+        </li>
+        <li class="nav__list-item">
+          <a href="index.html" class="nav__list-link">
+            <div class="nav__badge">8</div>
+            <i class="fas fa-comment"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="find.html" class="nav__list-link">
+            <i class="fas fa-search"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="more.html" class="nav__list-link">
+            <i class="fas fa-ellipsis-h"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="bigScreen">
+      <span class="bigScreen__text">화면 크기를 줄여주세요! 😱</span>
+    </div>
+    
+      
+    
+    
+  </body>
+</html>
